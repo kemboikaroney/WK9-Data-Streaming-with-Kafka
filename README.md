@@ -43,6 +43,7 @@ To test the solution, use the provided dummy JSON file. The file contains sample
 To produce the sample data to the Kafka cluster, run the following command:
 
 bin/kafka-console-producer.sh --broker-list localhost:9092 --topic mobile-money-transactions < mobile_money_data.json
+
 To consume the sample data from the Kafka cluster, run the following command:
 
 bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic mobile-money-transactions --from-beginning
